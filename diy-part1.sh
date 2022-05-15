@@ -18,3 +18,6 @@
 # luci-app-ssr-plus=y CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Xray=y
 echo 'src-git helloworld https://github.com/fw876/helloworld' >> feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+
+# 直接添加插件，git clone会直接在package下克隆
+git clone https://github.com/thinktip/luci-theme-neobird.git
