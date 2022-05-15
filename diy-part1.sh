@@ -37,7 +37,11 @@ echo 'src-git helloworld https://github.com/fw876/helloworld' >> feeds.conf.defa
 
 # 使用kiddin9替换部分插件
 # https://github.com/kiddin9/openwrt-packages/tree/master/luci-app-adbyby-plus
-svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-adbyby-plus package/luci-app-adbyby-plus
+echo "src-git kiddin9 https://github.com/kiddin9/openwrt-packages" >> feeds.conf.default
+
+# kenzok8插件
+#echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages' >> feeds.conf.default
+#echo 'src-git small https://github.com/kenzok8/small' >> feeds.conf.default
 
 # 直接添加插件，git clone会直接在package下克隆
 git clone https://github.com/thinktip/luci-theme-neobird.git package/luci-theme-neobird
