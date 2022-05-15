@@ -13,6 +13,8 @@
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
+# 指令拉取参考https://github.com/lajidon/openwrt
+
 # Add a feed source
 # 相关依赖配置在config中使能使用,具体查看以来中的Makefile
 # CONFIG_PACKAGE_luci-app-ssr-plus=y
@@ -32,6 +34,10 @@
 # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Xray is not set
 echo 'src-git helloworld https://github.com/fw876/helloworld' >> feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+
+# 使用kiddin9替换部分插件
+# https://github.com/kiddin9/openwrt-packages/tree/master/luci-app-adbyby-plus
+svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-adbyby-plus package/luci-app-adbyby-plus
 
 # 直接添加插件，git clone会直接在package下克隆
 git clone https://github.com/thinktip/luci-theme-neobird.git package/luci-theme-neobird
