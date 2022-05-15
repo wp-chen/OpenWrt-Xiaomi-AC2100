@@ -20,4 +20,4 @@ echo 'src-git helloworld https://github.com/fw876/helloworld' >> feeds.conf.defa
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 
 # 直接添加插件，git clone会直接在package下克隆
-git clone https://github.com/thinktip/luci-theme-neobird.git
+git clone https://github.com/thinktip/luci-theme-neobird.git package/luci-theme-neobird
