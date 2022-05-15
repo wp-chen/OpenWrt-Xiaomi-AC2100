@@ -14,5 +14,7 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
-#echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
+# 相关依赖配置在config中使能使用,具体查看以来中的Makefile
+# luci-app-ssr-plus=y CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Xray=y
+echo 'src-git helloworld https://github.com/fw876/helloworld' >> feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
